@@ -39,7 +39,7 @@ en: &en
   you_are_invited_to_product_name: You are invited to %{product_name}
   you_have_been_invited_to_account_name_product_name_please_sign_up_using_the_link_below_: 'You have been invited to %{account_name} %{product_name}. Please sign up using the link below:'
   sent_using_product_name_free_document_signing_html: 'Sent using <a href="%{product_url}">%{product_name}</a> free document signing.'
-  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Sign documents with trusted certificate provided by DocuSeal. Your documents and data are never shared with DocuSeal. PDF checksum is provided to generate a trusted signature.
+  sign_documents_with_trusted_certificate_provided_by_docu_seal_your_documents_and_data_are_never_shared_with_docu_seal_p_d_f_checksum_is_provided_to_generate_a_trusted_signature: Sign documents with trusted certificate provided by RegDocs. Your documents and data are never shared with RegDoc. PDF checksum is provided to generate a trusted signature.
   you_have_been_invited_to_submit_the_name_form: 'You have been invited to submit the "%{name}" form.'
   you_have_been_invited_to_sign_the_name: 'You have been invited to sign the "%{name}".'
   alternatively_you_can_review_and_download_your_copy_using_the_link_below: "Alternatively, you can review and download your copy using the link below:"
@@ -132,7 +132,7 @@ en: &en
   profile_details: Profile Details
   sign_up_with_google: Sign up with Google
   sign_up_with_microsoft: Sign up with Microsoft
-  by_creating_an_account_you_agree_to_our_html: 'By creating an account, you agree to our <a target="_blank" href="https://www.docuseal.com/privacy">Privacy Policy</a> and <a target="_blank" href="https://www.docuseal.com/terms">Terms of Service</a>.'
+  by_creating_an_account_you_agree_to_our_html: 'By creating an account, you agree to our  and Terms of Service.'
   enter_email_to_continue: Enter email to continue
   account: Account
   preferences: Preferences
@@ -153,7 +153,7 @@ en: &en
   combine_completed_documents_and_audit_log: Combine completed documents and Audit Log
   salesforce_integration: Salesforce Integration
   salesforce_has_been_connected: Salesforce has been connected.
-  connect_salesforce_account_to_integrate_with_docuseal: Connect Salesforce account to integrate with DocuSeal
+  connect_salesforce_account_to_integrate_with_docuseal: Connect Salesforce account to integrate with RegDoc
   re_connect_salesforce: Re-connect Salesforce
   connect_salesforce: Connect Salesforce
   danger_zone: Danger Zone
@@ -182,13 +182,13 @@ en: &en
   resetting_password: Resetting password
   sign_in_with_name_account: 'Sign in with %{name} account'
   two_factor_code_from_authenticator_app: Two-Factor Code from Authenticator App
-  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Sign up in DocuSeal Console to upgrade. On-premises app is completely standalone, Console is used only to manage your license.
+  sign_up_in_docuseal_console_to_upgrade_on_premises_app_is_completely_standalone_console_is_used_only_to_manage_your_license: Sign up in RegDocs Console to upgrade. On-premises app is completely standalone, Console is used only to manage your license.
   send_from_email: Send from Email
   optional: optional
   save: Save
   saving: Saving
   changes_have_been_saved: Changes have been saved.
-  unlock_with_docuseal_pro: Unlock with DocuSeal Pro
+  unlock_with_docuseal_pro: Unlock with RegDocs Pro
   use_your_own_certificates_to_sign_and_verify_pdf_files: Use your own certificates to sign and verify PDF files.
   upload_certificate: Upload Certificate
   name: Name
@@ -287,7 +287,7 @@ en: &en
   password_has_been_changed: Password has been changed.
   email_integration: Email Integration
   send_via_connected_email: Send via connected email
-  activate_with_docuseal_pro: Activate with DocuSeal Pro
+  activate_with_docuseal_pro: Activate with RegDocs Pro
   send_signature_request_to_your_recipients_directly_from_your_email: Send signature request to your recipients directly from your email
   connect_gmail: Connect Gmail
   re_connect_gmail: Re-connect Gmail
@@ -365,7 +365,7 @@ en: &en
   upgrade_to_send_unlimited_signature_requests: Upgrade to send unlimited signature requests
   add_without_sending: Add without sending
   upgade_now: Upgrade Now
-  send_signature_request_emails_without_limits_with_docuseal_pro: Send signature request emails without limits with DocuSeal Pro
+  send_signature_request_emails_without_limits_with_docuseal_pro: Send signature request emails without limits with RegDocs Pro
   count_emails_used: '%{count} emails used'
   has_been_connected: has been connected
   but_not_activated: but not activated
@@ -462,7 +462,7 @@ en: &en
   unarchive: Unarchive
   role: Role
   last_session: Last session
-  unlock_more_user_roles_with_docuseal_pro: Unlock more user roles with DocuSeal Pro.
+  unlock_more_user_roles_with_docuseal_pro: Unlock more user roles with RegDocs Pro.
   view_active: View Active
   team_account: Team account
   team_accounts: Team Accounts

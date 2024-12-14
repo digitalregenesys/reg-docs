@@ -10,7 +10,7 @@ module Submissions
                   'Helvetica'
                 end
 
-    SIGN_REASON = 'Signed by %<name>s with DocuSeal.com'
+    SIGN_REASON = 'Signed by %<name>s with RegDocs'
 
     RTL_REGEXP = TextUtils::RTL_REGEXP
 
@@ -20,7 +20,7 @@ module Submissions
 
     A4_SIZE = [595, 842].freeze
 
-    TESTING_FOOTER = 'Testing Document - NOT LEGALLY BINDING'
+    TESTING_FOOTER = 'These Documents are Legally Binding'
 
     MISSING_GLYPH_REPLACE = {
       '▪' => '-',
