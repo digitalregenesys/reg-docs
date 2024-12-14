@@ -1,14 +1,11 @@
-<% if Docuseal.demo? || (request.path != '/' && !devise_controller?) %>
-  <meta name="robots" content="noindex">
-<% end %>
-<% title = content_for(:html_title) || (signed_in? ? 'DocuSeal' : 'DocuSeal | Open Source Document Signing') %>
-<% description = content_for(:html_description) || 'Open source, self-hosted tool to streamline document filling and signing. Create custom PDF forms to complete and sign with an easy to use online tool.' %>
-<meta name="description" content="<%= description %>">
+<meta name="robots" content="noindex">
+<title> Regenesys Education Document Manager </title>
+<meta name="description" content="Regenesys Education">
 <meta property="og:title" content="<%= title %>">
-<meta property="og:description" content="<%= description %>">
+<meta property="og:description" content="Regenesys Education">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<%= root_url %>">
-<meta property="og:site_name" content="DocuSeal">
+<meta property="og:site_name" content="Regenesys Education">
 <% if content_for(:disable_image_preview) %>
   <meta property="og:image" content="">
   <meta name="twitter:image" content="">
@@ -19,10 +16,10 @@
   <meta name="twitter:image" content="<%= image_pack_url('images/preview.png') %>">
 <% end %>
 <meta name="twitter:card" content="summary">
-<meta name="twitter:creator" content="@docusealco">
-<meta name="twitter:site" content="@docusealco">
-<meta name="twitter:title" content="<%= title %>">
-<meta name="twitter:description" content="<%= description %>">
+<meta name="twitter:creator" content="@RegenesysB">
+<meta name="twitter:site" content="@RegenesysB">
+<meta name="twitter:title" content="Regenesys Document Manager">
+<meta name="twitter:description" content="Regenesys Education">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
