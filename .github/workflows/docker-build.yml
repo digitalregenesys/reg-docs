@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository and fetch the main branch
+      # Step 1: Set up SSH authentication
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
@@ -19,6 +19,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
+      # Step 2: Clone the repository
       - name: Checkout Code
         run: |
           git clone git@github.com:${{ github.repository }} repo
@@ -26,18 +27,18 @@ jobs:
           git fetch --depth=1 origin refs/heads/main
           git checkout ${{ github.sha }}
 
-      # Log in to GitHub Container Registry
+      # Step 3: Log in to GitHub Container Registry
       - name: Log in to GitHub Container Registry
         run: |
           echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
-      # Build Docker image
+      # Step 4: Build Docker image
       - name: Build Docker Image
         run: |
           cd repo
           docker build -t ghcr.io/${{ github.repository }}/reg-doc:latest .
 
-      # Push Docker image to GitHub Container Registry
+      # Step 5: Push Docker image to GitHub Container Registry
       - name: Push Docker Image
         run: |
           cd repo
