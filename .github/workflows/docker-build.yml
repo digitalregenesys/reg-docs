@@ -12,10 +12,16 @@ jobs:
 
     steps:
       # Checkout the repository and fetch the main branch
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
       - name: Checkout Code
         run: |
-          git config --global url."https://${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
-          git clone https://github.com/${{ github.repository }} repo
+          git clone git@github.com:${{ github.repository }} repo
           cd repo
           git fetch --depth=1 origin refs/heads/main
           git checkout ${{ github.sha }}
