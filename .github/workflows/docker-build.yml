@@ -14,6 +14,7 @@ jobs:
       # Checkout the repository and fetch the main branch
       - name: Checkout Code
         run: |
+          git config --global url."https://${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
           git clone https://github.com/${{ github.repository }} repo
           cd repo
           git fetch --depth=1 origin refs/heads/main
