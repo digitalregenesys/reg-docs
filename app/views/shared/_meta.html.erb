@@ -1,5 +1,8 @@
-<meta name="robots" content="noindex">
-<title> Regenesys Education Document Manager </title>
+<% if Docuseal.demo? || (request.path != '/' && !devise_controller?) %>
+  <meta name="robots" content="noindex">
+<% end %>
+<% title = content_for(:html_title) || (signed_in? ? 'Regenesys Education' : 'Regenesys Education Document Manager') %>
+<% description = content_for(:html_description) || 'Open source, self-hosted tool to streamline document filling and signing. Create custom PDF forms to complete and sign with an easy to use online tool.' %>
 <meta name="description" content="Regenesys Education">
 <meta property="og:title" content="<%= title %>">
 <meta property="og:description" content="Regenesys Education">
