@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+      # Checkout the repository and fetch the main branch
       - name: Checkout Code
         run: |
           git clone https://github.com/${{ github.repository }} repo
