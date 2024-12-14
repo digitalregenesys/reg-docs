@@ -9,7 +9,7 @@ services:
     volumes:
       - ./docuseal:/data/docuseal
     environment:
-      - FORCE_SSL=${HOST}
+      - FORCE_SSL=documents.regenesys.education
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/docuseal
 
   postgres:
@@ -28,7 +28,7 @@ services:
 
   caddy:
     image: caddy:latest
-    command: caddy reverse-proxy --from $HOST --to app:3000
+    command: caddy reverse-proxy --from documents.regenesys.education --to app:3000
     ports:
       - 80:80
       - 443:443
@@ -36,4 +36,4 @@ services:
     volumes:
       - .:/data
     environment:
-      - HOST=${HOST}
+      - HOST=documents.regenesys.education
