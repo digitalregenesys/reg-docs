@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style></style>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Invitation to Sign</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f9fa;
+            }
+            .container {
+                max-width: 600px;
+                margin: 20px auto;
+                background: #ffffff;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .header {
+                background-color: #2aa399;
+                color: #ffffff;
+                text-align: center;
+                padding: 15px 10px;
+            }
+            .content {
+                padding: 20px;
+            }
+            .footer {
+                background-color: #f1f1f1;
+                color: #333333;
+                text-align: center;
+                padding: 15px 10px;
+                font-size: 12px;
+            }
+            .button {
+                display: inline-block;
+                padding: 10px 20px;
+                margin: 20px 0;
+                color: #ffffff;
+                background-color: #2aa399;
+                text-decoration: none;
+                border-radius: 5px;
+                text-align: center;
+            }
+            .button:hover {
+                background-color: #23867f;
+            }
+        </style>
   </head>
   <body dir="<%= TextUtils.rtl?(yield) ? 'rtl' : 'auto' %>">
-    <%= yield %>
-    <%= render partial: 'shared/mailer_attribution' %>
+        <div class="container">
+            <div class="header">
+                <h1>Regenesys Education</h1>
+            </div>
+            <div class="content">
+                <%= yield %>
+            </div>
+            <div class="footer">
+                <p><%= render partial: 'shared/mailer_attribution' %></p>
+            </div>
+        </div>
   </body>
 </html>

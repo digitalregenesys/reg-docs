@@ -2,7 +2,7 @@
 
 class SubmitterMailer < ApplicationMailer
   MAX_ATTACHMENTS_SIZE = 10.megabytes
-  SIGN_TTL = 1.hour + 20.minutes
+  SIGN_TTL = 24.hour + 20.minutes
 
   NO_REPLY_REGEXP = /no-?reply@/i
 
