@@ -21,13 +21,14 @@
                 overflow: hidden;
             }
             .header {
-                background-color: #2aa399;
+                background-color: #198754;
                 color: #ffffff;
                 text-align: center;
                 padding: 15px 10px;
             }
             .content {
                 padding: 20px;
+                font-size: 16px;
             }
             .footer {
                 background-color: #f1f1f1;
@@ -54,12 +55,14 @@
   <body dir="<%= TextUtils.rtl?(yield) ? 'rtl' : 'auto' %>">
         <div class="container">
             <div class="header">
+                <h1><img src="https://www.regenesys.net/_next/image?url=https%3A%2F%2Fuat-inf-dr-lp.s3.us-east-1.amazonaws.com%2Fuser-documents%2Fdr_logo_1_63a3cf42a5.png&w=640&q=75" /></h1>
                 <h1>Regenesys Education</h1>
             </div>
             <div class="content">
                 <%= yield %>
             </div>
             <div class="footer">
+                <p>RegDocs - Secure Document Signing</p>
                 <p><%= render partial: 'shared/mailer_attribution' %></p>
             </div>
         </div>
